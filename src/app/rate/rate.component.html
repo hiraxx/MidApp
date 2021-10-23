@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="mt-5 glass mx-auto p-5" style="width: 50rem;">
+      <h2 class="mb-4 text-light">Rate Your Product</h2>
+      <div class="card mb-3 mx-auto" style="max-width: 700px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="assets/images/poster.jpg" class="img-fluid card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Squid Game</h5>
+              <p class="card-text">The series revolves around a contest in which 456 players,
+                drawn from different walks of life but each deeply in debt, play a series
+                of children's games for the chance to win a ₩45.6 billion prize, with a
+                deadly penalty if they lose. The name of the series draws from a similarly
+                named Korean children's game.</p>
+                <div class="mt-5">
+                    <div class="float-end mx-5">
+                        <h4>{{rate}} of 5</h4>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <h4 class="float-start">Rating:</h4>
+                        <div class="p-0 mx-1" *ngFor="let num of fakeArray; let i = index">
+                            <div *ngIf="rate > i; else elseBlock">
+                                <button class="float btn light" (click)="onClick(i+1)"></button>
+                            </div>
+                            <ng-template #elseBlock>
+                                <button class="float btn dark" (click)="onClick(i+1)"></button>
+                            </ng-template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>

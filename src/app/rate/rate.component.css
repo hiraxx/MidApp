@@ -1,0 +1,17 @@
+button {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+.dark{
+   background-color: gray;
+}
+.light{
+    /* background: rgb(34,241,5);
+    background: radial-gradient(circle, rgba(34,241,5,1) 10%, rgba(51,57,51,1) 87%); */
+
+    background: rgb(255,230,0);
+    background: radial-gradient(circle, rgba(255,230,0,1) 0%, rgba(99,101,4,1) 90%);
+    /* background: radial-gradient(circle at 40% 0%, #72ff99, #63ff91, #3dfe7f, #09fc6d, #04c762, #049252, #036b41, #035c3a); */
+}
